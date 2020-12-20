@@ -5,7 +5,7 @@ module.exports.run = async (client, message, argument) => {
 
     if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Geen perms");
     
-    const categoryID = "767843900823175168";
+    const categoryID = "790289966923644939";
 
     
 

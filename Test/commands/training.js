@@ -38,7 +38,7 @@ module.exports.run = async (client, message, args) => {
     .setImage('https://www.defensie.nl/binaries/large/content/gallery/defensie/content-afbeeldingen/organisatie/marechaussee/otc/foto-website-1.jpg')
     .setFooter('Defensie', '');
 
-    var channel = message.member.guild.channels.cache.get("766924859128283177");
+    var channel = message.member.guild.channels.cache.get("790290154174677002");
 
     if (!channel) return
 
