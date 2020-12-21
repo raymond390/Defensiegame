@@ -1,4 +1,8 @@
-var botEmbed = new discord.MessageEmbed()
+const discord = require("discord.js");
+
+module.exports.run = async (client, message, argument) => {
+    
+    var botEmbed = new discord.MessageEmbed()
     
     .setTitle('Regels')
     .setColor("#f00c0c")
@@ -29,7 +33,7 @@ var botEmbed = new discord.MessageEmbed()
     if (!channel) return
 
     channel.send(botEmbed);
-
+    }
 
 module.exports.help = {
     name: "regels",
