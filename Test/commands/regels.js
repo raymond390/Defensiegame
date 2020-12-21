@@ -24,7 +24,7 @@ var botEmbed = new discord.MessageEmbed()
     .setImage('https://www.defensie.nl/binaries/large/content/gallery/defensie/content-afbeeldingen/organisatie/marechaussee/otc/foto-website-1.jpg')
     .setFooter('Defensie', '');
 
-    var channel = message.member.guild.channels.cache.get("789495285176467496");
+    var channel = message.member.guild.channels.cache.get("785197427464470578");
 
     if (!channel) return
 
