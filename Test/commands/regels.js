@@ -7,22 +7,41 @@ module.exports.run = async (client, message, argument) => {
     .setTitle('Regels')
     .setColor("#f00c0c")
     .setDescription(`
-    1. Niet Schelden!!
-    2. Niet Spammen!
-    3. Geen zelfpromotie/Reclame maken!!
-    4. Respect voor elkaar!
-    5. Staffleden hebben altijd de Laaste woord
-    6. Niet zomaar om een rank up vragen!
-    7. je mag niet abuse
-    8. Maak geen misbruik van je rank/tools
-    9. Je mag niet hacken meteen 3 warnings/kick
-    10. Luister Altijd naar een stafflid zo niet 1 warn
-    11. Niet Reclame in de server lopen maken en dan hebben we over linkjes van andere server,s Bijv
-    
-    STRAFFEN!!
-    1. Dit kan een waarschuwing zijn.
-    2. Een Mute (Oplopend tot 7 dagen
-    3. Je kan verbannen worden van de server (Tot 10 dagen)`)
+Regels
+Als u niet aan de onderstaande regels houdt,
+kunnen er gevolgen komen.
+Algemene Tekst/Foto Regels
+- Niet vragen om mod.
+- Geen seksueel expliciete inhoud.
+- Geen pornografische/NSFW inhoud.
+- Geen illegale inhoud.
+- Geen mini-modding.
+- Geen Racisme.
+- Geen aanzetten tot haat.
+- Geen beledigen inhoud naar iemand anders.
+- Niet spammen
+- Geen zelfpromotie. (Wel in vraag.).
+Algemene Voice Regels:
+- Geen earrape.
+- Geen vervelende, luide of hoge toongeluiden.
+- Geen voice changers.
+- Geen muziek (bots) in openbare spraakkanalen.
+
+Moderators behouden zich het recht voor om de verbinding
+met een spraakkanaal te verbreken als de geluidskwaliteit slecht is.
+
+De algemene Tekst/Foto regels gelden hier ook!
+Regels Tegenover Staff
+- U dient respect te tonen tegen over staff.
+- Staff heeft altijd het laatste woord.
+- Geen bedreiging tegen over HR of hoger.
+Algemene Profiel Regels:
+Profielfoto - Bij het hebben van een ongepaste of niet gewenste foto
+kunnen er gevolgen komen.
+Naam - Bij het hebben van een ongepaste of ongewenste naam kunnen er
+gevolgen komen
+Status - Bij het hebben van een ongepaste/negatieve status kunnen er
+gevolgen komen.`)
     .setTimestamp()
     .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')
     .setImage('')
