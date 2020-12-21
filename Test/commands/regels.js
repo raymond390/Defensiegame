@@ -32,7 +32,7 @@ var botEmbed = new discord.MessageEmbed()
 
 
 module.exports.help = {
-    name: "training",
-    description: ".training Type-type-co host-datum-tijd-opmerkingen",
+    name: "regels",
+    description: "",
     category: "Informatie"
 }
