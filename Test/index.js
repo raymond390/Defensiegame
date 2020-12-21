@@ -105,9 +105,9 @@ client.on("guildMemberRemove", member => {
 
 
 const activities_list = [
-    "Testing", 
+    "🎄Defensie Roleplay🎄", 
     "🎄.help🎄",
-    "Testin", 
+    "🎄Defensie Roleplay🎄", 
     "🎄.help🎄"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
     
@@ -134,7 +134,7 @@ client.on("messageDelete", messageDeleted => {
         .setTimestamp()
         .setColor("#FF0000");
 
-    client.channels.cache.find(c => c.name == "log")
+    client.channels.cache.find(c => c.name == "logs")
 
 });
 
