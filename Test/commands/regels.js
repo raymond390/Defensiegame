@@ -25,7 +25,7 @@ module.exports.run = async (client, message, argument) => {
     3. Je kan verbannen worden van de server (Tot 10 dagen)`)
     .setTimestamp()
     .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')
-    .setImage('https://www.defensie.nl/binaries/large/content/gallery/defensie/content-afbeeldingen/organisatie/marechaussee/otc/foto-website-1.jpg')
+    .setImage('')
     .setFooter('Defensie', '');
 
     var channel = message.member.guild.channels.cache.get("785197427464470578");
