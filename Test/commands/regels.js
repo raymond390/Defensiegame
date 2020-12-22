@@ -47,7 +47,7 @@ gevolgen komen.`)
     .setImage('')
     .setFooter('Defensie', '');
 
-    var channel = message.member.guild.channels.cache.get("790892366588411965");
+    var channel = message.member.guild.channels.cache.get("785197427464470578");
 
     if (!channel) return
 
