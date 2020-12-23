@@ -124,7 +124,6 @@ module.exports.run = async (client, message, args) => {
                                     settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                         var antwoord6 = antwoord.first();;
                                         settedParrent.send(vraag7);
-
                                         
 
                                         var uitkomst = new discord.MessageEmbed()
@@ -143,8 +142,8 @@ module.exports.run = async (client, message, args) => {
                         })
                     })
                        
-                  })
-                })
+                   })
+                
                    settedParrent.send(`${person}, <@&${staff}>`).then(msg => msg.delete({ timeout: 1000 }));
 
                 }).catch(err => {
