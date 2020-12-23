@@ -62,38 +62,48 @@ module.exports.run = async (client, message, args) => {
                     var vraag1 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 1")
                         .setColor("#00BFFF")
-                        .setDescription("Wie bent je");    
+                        .setDescription(" hoe oud ben je");    
                     
                     var vraag2 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 2")
                         .setColor("#00BFFF")
-                        .setDescription("Waarom wil je staff worden"); 
+                        .setDescription("ben je bekend met admin?"); 
                         
                     var vraag3 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 3")
                         .setColor("#00BFFF")
-                        .setDescription("waarom bent u beter dan de andere sollicitanten"); 
+                        .setDescription("wat is AA"); 
                     
                     var vraag4 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 4")
                         .setColor("#00BFFF")
-                        .setDescription("Heb je ervaring?"); 
+                        .setDescription("wat doe je als je een HR ziet abusen?"); 
                     
                     var vraag5 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 5")
                         .setColor("#00BFFF")
-                        .setDescription("Wat zijn je plus punten"); 
+                        .setDescription("wat doe je als je een HC ziet abusen?"); 
 
                     var vraag6 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 6")
                         .setColor("#00BFFF")
-                        .setDescription("wat zijn je minpunten"); 
+                        .setDescription(" wat doe je als er een hacker in de game zit?"); 
 
                     var vraag7 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 7")
                         .setColor("#00BFFF")
-                        .setDescription("Nog Vragen?");
+                        .setDescription(" welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)");
 
+                     var vraag8 = new discord.MessageEmbed()
+                        .setTitle("sollicitatie vraag 7")
+                        .setColor("#00BFFF")
+                        .setDescription(" hoe actief ben jij op een schaal van 1 tot 10?");
+
+                    var vraag9 = new discord.MessageEmbed()
+                        .setTitle("sollicitatie vraag 7")
+                        .setColor("#00BFFF")
+                        .setDescription("moeten wij nog iets van je weten?")
+                      
                         settedParent.send(message.author.id);
                         settedParent.send(embedParent);
                         settedParent.send(vraag1);
@@ -123,15 +133,25 @@ module.exports.run = async (client, message, args) => {
                                              var antwoord6 = antwoord.first();;
                                              settedParent.send(vraag7);
      
-                                           settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                             var antwoord7 = antwoord.first();;
+                                             settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                                var antwoord7 = antwoord.first();;
+                                                settedParent.send(vraag8);
+                                                
+                                                settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                                    var antwoord8 = antwoord.first();;
+                                                    settedParent.send(vraag8);
+
+                                                    settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                                        var antwoord9 = antwoord.first();;
+                                                        settedParent.send(vraag9);
+                                                    
                                              
      
                                              var uitkomst = new discord.MessageEmbed()
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**Heb je ervaring?**: \n${antwoord1}\n\n**Waarom wil je staff worden**: \n${antwoord2}\n\n**waarom bent u beter dan de andere sollicitanten**: \n${antwoord3}\n\n**Heb je ervaring?**: \n${antwoord4}\n\n**Wat zijn je plus punten**: \n${antwoord5}\n\n**wat zijn je minpunten**: \n${antwoord6}\n\n**Nog Vragen?**: \n${antwoord7}`)
+                                             .setDescription(`**wat is je roblox naam**: \n${antwoord1}\n\n**hoe oud ben je?**: \n${antwoord2}\n\n**ben je bekend met admin?**: \n${antwoord3}\n\n**wat is AA**: \n${antwoord4}\n\n**wat doe je als je een HR ziet abusen?**: \n${antwoord5}\n\n**wat doe je als je een HC ziet abusen?**: \n${antwoord6}\n\n**wat doe je als er een hacker in de game zit?**: \n${antwoord7}\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)\n${antwoord8}\n**hoe actief ben jij op een schaal van 1 tot 10?**\n${antwoord9}\nmoeten wij nog iets van je weten? `)
                                          
      
                                              settedParent.bulkDelete(14).then(
