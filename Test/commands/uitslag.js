@@ -6,11 +6,11 @@ module.exports.run = async (client, message, args) => {
 
     var ticketUser = message.guild.member(message.mentions.users.first());
 
-    if (message.channel.parrentID !== categoryID) return message.reply("Dit is geen ticket") && message.delete();
+    if (message.channel.parentID !== categoryID) return message.reply("Dit is geen ticket") && message.delete();
 
     if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("jij kan dit niet doen") && message.delete();
 
-    if (!ticketUser) return message.reply("geef een persoon op") && message.delete();
+    if (!ticketuser) return message.reply("geef een persoon op") && message.delete();
 
     var kiesEmbed = new discord.MessageEmbed()
     .setTitle("test")
