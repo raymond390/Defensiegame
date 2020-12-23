@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
 
     message.channel.send(embed).then(msg => msg.delete({ timeout: 3000 }))
 
-    message.guild.channels.create(channelName, {type: 'text'}).then(
+    message.guild.channels.create(channelName, {type: 'text' }).then(
         (createdChannel) => {
             createdChannel.setParent(catergoryID).then(
                 (settedParrent) => {
@@ -40,7 +40,7 @@ module.exports.run = async (client, message, args) => {
                     });
                     
                     settedParrent.updateOverwrite(message.author.id, {
-                        SEND_MESSAGE: true,
+                        SEND_MESSAGES: true,
                         CREATE_INSTANT_INVITE: false,
                         READ_MESSAGES: true,
                         ATTACH_FILES: true,
