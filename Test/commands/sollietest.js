@@ -93,36 +93,37 @@ module.exports.run = async (client, message, args) => {
                         .setTitle("sollicitatie vraag 1")
                         .setColor("#00BFFF")
                         .setDescription("Nog Vragen?");
-
-                        settedParrent.send(embedParent);
-                        settedParrent.send(vraag1);
+                        
+                        settedParent.send(message.author.id);
+                        settedParent.send(embedParent);
+                        settedParent.send(vraag1);
      
     
-                        settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                        settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                             var antwoord1 = antwoord.first();;
-                            settedParrent.send(vraag2);
+                            settedParent.send(vraag2);
      
-                            settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                            settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                              var antwoord2 = antwoord.first();;
-                             settedParrent.send(vraag3);
+                             settedParent.send(vraag3);
      
-                             settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                             settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                  var antwoord3 = antwoord.first();;
-                                 settedParrent.send(vraag4);
+                                 settedParent.send(vraag4);
      
-                                 settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                 settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                      var antwoord4 = antwoord.first();;
-                                     settedParrent.send(vraag5);
+                                     settedParent.send(vraag5);
      
-                                     settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                     settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                          var antwoord5 = antwoord.first();;
-                                         settedParrent.send(vraag6);
+                                         settedParent.send(vraag6);
      
-                                         settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                         settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                              var antwoord6 = antwoord.first();;
-                                             settedParrent.send(vraag7);
+                                             settedParent.send(vraag7);
      
-                                           settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                           settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                              var antwoord7 = antwoord.first();;
                                              
      
@@ -133,8 +134,8 @@ module.exports.run = async (client, message, args) => {
                                              .setDescription(`**vraag 1**: ${antwoord1}\n\n**vraag 2**: ${antwoord2}\n\n**vraag 3**: ${antwoord3}\n\n**vraag 4**: ${antwoord4}\n\n**vraag 5**: ${antwoord5}\n\n**vraag 6**: ${antwoord6}\n\n**vraag 7**: ${antwoord7}`)
                                          
      
-                                             settedParrent.bulkDelete(14).then(
-                                                 settedParrent.send(uitkomst)
+                                             settedParent.bulkDelete(14).then(
+                                                 settedParent.send(uitkomst)
                                              )
                                          })
                                      })
