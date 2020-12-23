@@ -95,7 +95,7 @@ module.exports.run = async (client, message, args) => {
                     var vraag7 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 1")
                         .setColor("#00BFFF")
-                        .setDescription("Nog Vragen?") 
+                        .setDescription("Nog Vragen?");
 
                    settedParrent.send(message.author.id);
                    settedParrent.send(embedParent);
