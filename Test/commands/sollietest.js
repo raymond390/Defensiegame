@@ -65,47 +65,47 @@ module.exports.run = async (client, message, args) => {
                     .setDescription(" wat is je roblox naam"); 
                     
                     var vraag1 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 2")
                         .setColor("#00BFFF")
                         .setDescription(" hoe oud ben je");    
                     
                     var vraag2 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 2")
+                        .setTitle("sollicitatie vraag 3")
                         .setColor("#00BFFF")
                         .setDescription("ben je bekend met admin?"); 
                         
                     var vraag3 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 3")
+                        .setTitle("sollicitatie vraag 4")
                         .setColor("#00BFFF")
                         .setDescription("wat is AA"); 
                     
                     var vraag4 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 4")
+                        .setTitle("sollicitatie vraag 5")
                         .setColor("#00BFFF")
                         .setDescription("wat doe je als je een HR ziet abusen?"); 
                     
                     var vraag5 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 5")
+                        .setTitle("sollicitatie vraag 6")
                         .setColor("#00BFFF")
                         .setDescription("wat doe je als je een HC ziet abusen?"); 
 
                     var vraag6 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 6")
+                        .setTitle("sollicitatie vraag 7")
                         .setColor("#00BFFF")
                         .setDescription(" wat doe je als er een hacker in de game zit?"); 
 
                     var vraag7 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 7")
+                        .setTitle("sollicitatie vraag 8")
                         .setColor("#00BFFF")
                         .setDescription(" welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)");
 
                      var vraag8 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 7")
+                        .setTitle("sollicitatie vraag 9")
                         .setColor("#00BFFF")
                         .setDescription(" hoe actief ben jij op een schaal van 1 tot 10?");
 
                     var vraag9 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 7")
+                        .setTitle("sollicitatie vraag 10")
                         .setColor("#00BFFF")
                         .setDescription("moeten wij nog iets van je weten?")
                       
@@ -160,7 +160,7 @@ module.exports.run = async (client, message, args) => {
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**wat is je roblox naam**: \n${antwoord0}\n\n**hoe oud ben je?**: \n${antwoord1}\n\n**ben je bekend met admin?**: \n${antwoord2}\n\n**wat is AA**: \n${antwoord3}\n\n**wat doe je als je een HR ziet abusen?**:\n${antwoord4}\n**wat doe je als je een HC ziet abusen?**: \n${antwoord5}\n**wat doe je als er een hacker in de game zit?**: \n${antwoord6}\n\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)\n${antwoord7}\n**hoe actief ben jij op een schaal van 1 tot 10?**\n${antwoord8}\n**moeten wij nog iets van je weten?**\n${antwoord9}`)
+                                             .setDescription(`**wat is je roblox naam**: \n${antwoord0}\n\n**hoe oud ben je?**: \n${antwoord1}\n\n**ben je bekend met admin?**: \n${antwoord2}\n\n**wat is AA**: \n${antwoord3}\n**wat doe je als je een HR ziet abusen?**:\n${antwoord4}\n**wat doe je als je een HC ziet abusen?**: \n${antwoord5}\n**wat doe je als er een hacker in de game zit?**: \n${antwoord6}\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)**\n${antwoord7}\n**hoe actief ben jij op een schaal van 1 tot 10?**\n${antwoord8}\n**moeten wij nog iets van je weten?**\n${antwoord9}`)
                                          
      
                                              settedParent.bulkDelete(14).then(
