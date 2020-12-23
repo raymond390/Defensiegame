@@ -143,10 +143,7 @@ module.exports.run = async (client, message, args) => {
                                              
                                                         settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                                             var antwoord9 = antwoord.first();;
-                                                            settedParent.send(vraag10)
-
-                                                            settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                                                var antwoord10 = antwoord.first();;
+                                                     
 
                                              
      
@@ -170,7 +167,7 @@ module.exports.run = async (client, message, args) => {
 
             })
           })
-        })
+        
                     }
                     
                 ).catch(err => {
