@@ -143,13 +143,18 @@ module.exports.run = async (client, message, args) => {
                                              
                                                         settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                                             var antwoord9 = antwoord.first();;
+                                                            settedParent.send(vraag10)
+
+                                                            settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                                                var antwoord10 = antwoord.first();;
+
                                              
      
                                              var uitkomst = new discord.MessageEmbed()
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**wat is je roblox naam**: \n${antwoord1}\n\n**hoe oud ben je?**: \n${antwoord2}\n\n**ben je bekend met admin?**: \n${antwoord3}\n\n**wat is AA**: \n${antwoord4}\n\n**wat doe je als je een HR ziet abusen?**: \n${antwoord5}\n\n**wat doe je als je een HC ziet abusen?**: \n${antwoord6}\n\n**wat doe je als er een hacker in de game zit?**: \n\n${antwoord7}\n\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)\m\n${antwoord8}\n\n**hoe actief ben jij op een schaal van 1 tot 10?**\n\n${antwoord9}\n**moeten wij nog iets van je weten?** `)
+                                             .setDescription(`**wat is je roblox naam**: \n${antwoord}\n\n**hoe oud ben je?**: \n${antwoord2}\n\n**ben je bekend met admin?**: \n${antwoord3}\n\n**wat is AA**: \n${antwoord4}\n\n**wat doe je als je een HR ziet abusen?**: \n${antwoord5}\n\n**wat doe je als je een HC ziet abusen?**: \n${antwoord6}\n\n**wat doe je als er een hacker in de game zit?**: \n\n${antwoord7}\n\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)\n${antwoord8}\n**hoe actief ben jij op een schaal van 1 tot 10?**\n${antwoord9}\n**moeten wij nog iets van je weten?**\n${antwoord10}`)
                                          
      
                                              settedParent.bulkDelete(14).then(
@@ -165,7 +170,7 @@ module.exports.run = async (client, message, args) => {
 
             })
           })
-        
+        })
                     }
                     
                 ).catch(err => {
