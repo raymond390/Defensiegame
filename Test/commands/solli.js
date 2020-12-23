@@ -126,7 +126,7 @@ module.exports.run = async (client, message, args) => {
                                         settedParrent.send(vraag7);
 
                                         settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                        var antwoord6 = antwoord.first();;
+                                        var antwoord7 = antwoord.first();;
 
                                         var uitkomst = new discord.MessageEmbed()
                                         .setTitle("Bedankt voor het solliciteren")
