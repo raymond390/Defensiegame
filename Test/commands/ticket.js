@@ -57,6 +57,7 @@ module.exports.run = async (client, message, args) => {
                         .setFooter('Defensie', '');
 
                     settedParent.send(embedParent);
+                    
 
                 }
             ).catch(err => {
