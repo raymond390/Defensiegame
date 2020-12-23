@@ -35,7 +35,7 @@ module.exports.run = async (client, message, args) => {
                 (settedParrent) => {
 
                     settedParrent.updateOverwrite(message.guild.roles.find(role => role.name === "@everyone"), {
-                        SEND_MESSAGE: false,
+                        SEND_MESSAGES: false,
                         VIEW_CHANNEL: false
                     });
                     
@@ -51,7 +51,7 @@ module.exports.run = async (client, message, args) => {
                     });
 
                     settedParrent.updateOverwrite(message.guild.roles.get(staff), {
-                        SEND_MESSAGE: true,
+                        SEND_MESSAGES: true,
                         READ_MESSAGES: true,                    
                         READ_MESSAGES_HISTORY: true,
                         VIEW_CHANNEL: true                      
