@@ -94,10 +94,8 @@ module.exports.run = async (client, message, args) => {
                         .setColor("#00BFFF")
                         .setDescription("Nog Vragen?");
 
-                    settedParrent.send(message.author.id);
-                    settedParrent.send(embedParent);
-                    settedParrent.send(vraag1);
-
+                        settedParrent.send(embedParent);
+                        settedParrent.send(vraag1);
      
     
                         settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
