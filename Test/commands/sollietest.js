@@ -94,7 +94,7 @@ module.exports.run = async (client, message, args) => {
                         .setColor("#00BFFF")
                         .setDescription("Nog Vragen?");
 
-                        settedParent.send(embedParent);
+                        settedParrent.send(message.author.id);
                         settedParrent.send(embedParent);
                         settedParrent.send(vraag1);
     
