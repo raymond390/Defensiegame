@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    var categoryID = "790289966923644939"
+    var categoryID = "790522631941128202"
 
     var ticketUser = message.guild.member(message.mentions.users.first());
 
@@ -13,14 +13,14 @@ module.exports.run = async (client, message, args) => {
     if (!ticketUser) return message.reply("geef een persoon op") && message.delete();
 
     var kiesEmbed = new discord.MessageEmbed()
-    .setTitle("test")
+    .setTitle("Uitslag")
     .setColor("00bfff")
     .addField(`Aangenomen:`, '✅', false)
     .addField("Afgewezen:", "❌", false)
 
 
     var redenEmbed = new discord.MessageEmbed()
-    .setTitle("test")
+    .setTitle("Uitslag")
     .setColor("#00BFFF")
     .addField(`Reden`, `vertel een reden`, false)
 
