@@ -27,6 +27,7 @@ module.exports.run = async (client, message, args) => {
     const filter = m => m.content;
 
     message.channel.send(kiesEmbed).then(async msg => {
+
         message.delete();
 
         var emoji = await promtMessage(msg, message.author, 60, ["✅", "❌"]);
@@ -80,8 +81,8 @@ module.exports.run = async (client, message, args) => {
         
     })
 }
-// Emojis aan teksten kopellen.
-async function promptMessage(message, author, time, reactions) {
+    // Emojis aan teksten kopellen.
+    async function promtMessage(message, author, time, reactions) {
     // We gaan eerst de tijd * 1000 doen zodat we seconden uitkomen.
     time *= 1000;
 
