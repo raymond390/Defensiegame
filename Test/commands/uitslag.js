@@ -67,7 +67,7 @@ module.exports.run = async (client, message, args) => {
                 .addField("Wie",`${ticketUser}`, false )
                 .addField("reden", `${redenBad}`, false)
                
-            message.channel.send(anwtwoordBad);
+            message.channel.send(antwoordenBad);
             message.channel.bulkDelete(1);
             message.channel.setTopic(`**Sollicitant**: ${ticketUser} **Status**: Afgewezen`)    
 
