@@ -125,8 +125,7 @@ module.exports.run = async (client, message, args) => {
                                         var antwoord6 = antwoord.first();;
                                         settedParrent.send(vraag7);
 
-                                        settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                        var antwoord7 = antwoord.first();;
+                                        
 
                                         var uitkomst = new discord.MessageEmbed()
                                         .setTitle("Bedankt voor het solliciteren")
@@ -144,8 +143,8 @@ module.exports.run = async (client, message, args) => {
                         })
                     })
                        
-                   })
-                
+                  })
+                })
                    settedParrent.send(`${person}, <@&${staff}>`).then(msg => msg.delete({ timeout: 1000 }));
 
                 }).catch(err => {
@@ -153,7 +152,8 @@ module.exports.run = async (client, message, args) => {
                 })
                 
             })
-        })
+        
+    
     
 }
 
