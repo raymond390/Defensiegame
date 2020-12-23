@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
     
         var embed = new discord.MessageEmbed()
             .setTitle("Hoi " + message.author.username)
-            .setFooter("Support kanaal wordt aangemaakt");
+            .setFooter("Sollicitatie kanaal wordt aangemaakt");
     
         message.channel.send(embed);
     
@@ -57,7 +57,7 @@ module.exports.run = async (client, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                         .setTitle("Hoi" + message.author.username)
                         .setColor("#00BFFF")
-                        .setDescription("Hier is u Sollictatie");
+                        .setDescription("Hier is u Sollictatie ");
                     
                     var vraag1 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 1")
@@ -65,35 +65,35 @@ module.exports.run = async (client, message, args) => {
                         .setDescription("Wie bent je");    
                     
                     var vraag2 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 2")
                         .setColor("#00BFFF")
                         .setDescription("Waarom wil je staff worden"); 
                         
                     var vraag3 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 3")
                         .setColor("#00BFFF")
                         .setDescription("waarom bent u beter dan de andere sollicitanten"); 
                     
                     var vraag4 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 4")
                         .setColor("#00BFFF")
                         .setDescription("Heb je ervaring?"); 
                     
                     var vraag5 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 5")
                         .setColor("#00BFFF")
                         .setDescription("Wat zijn je plus punten"); 
 
                     var vraag6 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 6")
                         .setColor("#00BFFF")
                         .setDescription("wat zijn je minpunten"); 
 
                     var vraag7 = new discord.MessageEmbed()
-                        .setTitle("sollicitatie vraag 1")
+                        .setTitle("sollicitatie vraag 7")
                         .setColor("#00BFFF")
                         .setDescription("Nog Vragen?");
-                        
+
                         settedParent.send(message.author.id);
                         settedParent.send(embedParent);
                         settedParent.send(vraag1);
@@ -131,7 +131,7 @@ module.exports.run = async (client, message, args) => {
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**vraag 1**: ${antwoord1}\n\n**vraag 2**: ${antwoord2}\n\n**vraag 3**: ${antwoord3}\n\n**vraag 4**: ${antwoord4}\n\n**vraag 5**: ${antwoord5}\n\n**vraag 6**: ${antwoord6}\n\n**vraag 7**: ${antwoord7}`)
+                                             .setDescription(`**Heb je ervaring?**: ${antwoord1}\n\n**Waarom wil je staff worden**: ${antwoord2}\n\n**waarom bent u beter dan de andere sollicitanten**: ${antwoord3}\n\n**Heb je ervaring?**: ${antwoord4}\n\n**Wat zijn je plus punten**: ${antwoord5}\n\n**wat zijn je minpunten**: ${antwoord6}\n\n**Nog Vragen?**: ${antwoord7}`)
                                          
      
                                              settedParent.bulkDelete(14).then(
@@ -145,6 +145,7 @@ module.exports.run = async (client, message, args) => {
                      })     
                  })
                     }
+                    
                 ).catch(err => {
                     message.channel.send("Er is iets misgelopen");
                 });
