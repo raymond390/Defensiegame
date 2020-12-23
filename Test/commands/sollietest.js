@@ -169,6 +169,7 @@ module.exports.run = async (client, message, args) => {
 
             })
           })
+        })
                     }
                     
                 ).catch(err => {
