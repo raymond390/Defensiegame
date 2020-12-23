@@ -101,27 +101,27 @@ module.exports.run = async (client, message, args) => {
                    settedParrent.send(embedParent);
                    settedParrent.send(vraag1);
 
-                   settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
+                   settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                        var antwoord1 = antwoord.first();;
                        settedParrent.send(vraag2);
 
-                       settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
+                       settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                         var antwoord2 = antwoord.first();;
                         settedParrent.send(vraag3);
 
-                        settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
+                        settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                             var antwoord3 = antwoord.first();;
                             settedParrent.send(vraag4);
 
-                            settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
+                            settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                 var antwoord4 = antwoord.first();;
                                 settedParrent.send(vraag5);
 
-                                settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
+                                settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                     var antwoord5 = antwoord.first();;
                                     settedParrent.send(vraag6);
 
-                                    settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
+                                    settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                         var antwoord6 = antwoord.first();;
                                         settedParrent.send(vraag7);
 
