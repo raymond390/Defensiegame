@@ -95,11 +95,11 @@ module.exports.run = async (client, message, args) => {
                     var vraag7 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 1")
                         .setColor("#00BFFF")
-                        .setDescription("Nog Vragen?"); 
+                        .setDescription("Nog Vragen?") 
 
                    settedParrent.send(message.author.id);
                    settedParrent.send(embedParent);
-                   settedParrent.send(vraag1)
+                   settedParrent.send(vraag1);
 
                    settedParrent.awaitMessages(s => s.author.id == Message.author.id, {max: 1}).then(antwoord => {
                        var antwoord1 = antwoord.first();;
