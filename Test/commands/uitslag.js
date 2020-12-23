@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
     if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("jij kan dit niet doen") && message.delete();
 
-    if (!ticketuser) return message.reply("geef een persoon op") && message.delete();
+    if (!ticketUser) return message.reply("geef een persoon op") && message.delete();
 
     var kiesEmbed = new discord.MessageEmbed()
     .setTitle("test")
