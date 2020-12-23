@@ -57,7 +57,7 @@ module.exports.run = async (client, message, args) => {
 
             message.channel.send(redenEmbed).then(msg => msg.delete({ timeout: 10000}));
 
-            message.channel.await.awaitMessage(filter, {max:1, time: 10000}).then(collected => {
+            message.channel.await.awaitMessages(filter, {max:1, time: 10000}).then(collected => {
 
                 var redenBad = collected.first();;
                                              
