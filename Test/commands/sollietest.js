@@ -54,7 +54,7 @@ module.exports.run = async (client, message, args) => {
                             READ_MESSAGE_HISTORY: true
                         });
     
-                        var embedParent = new discord.MessageEmbed()
+                    var embedParent = new discord.MessageEmbed()
                         .setTitle("Hoi" + message.author.username)
                         .setColor("#00BFFF")
                         .setDescription("Hier is u Sollictatie");
@@ -94,35 +94,38 @@ module.exports.run = async (client, message, args) => {
                         .setColor("#00BFFF")
                         .setDescription("Nog Vragen?");
 
-                        settedParent.send(embedParent);
-                        settedParrent.send(vraag1);
+                    settedParrent.send(message.author.id);
+                    settedParrent.send(embedParent);
+                    settedParrent.send(vraag1);
+
+     
     
                         settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                            var antwoord1 = antwoord.first();
+                            var antwoord1 = antwoord.first();;
                             settedParrent.send(vraag2);
      
                             settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                             var antwoord2 = antwoord.first();
+                             var antwoord2 = antwoord.first();;
                              settedParrent.send(vraag3);
      
                              settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                 var antwoord3 = antwoord.first();
+                                 var antwoord3 = antwoord.first();;
                                  settedParrent.send(vraag4);
      
                                  settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                     var antwoord4 = antwoord.first();
+                                     var antwoord4 = antwoord.first();;
                                      settedParrent.send(vraag5);
      
                                      settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                         var antwoord5 = antwoord.first();
+                                         var antwoord5 = antwoord.first();;
                                          settedParrent.send(vraag6);
      
                                          settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                             var antwoord6 = antwoord.first();
+                                             var antwoord6 = antwoord.first();;
                                              settedParrent.send(vraag7);
      
                                            settedParrent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                             var antwoord7 = antwoord.first();
+                                             var antwoord7 = antwoord.first();;
                                              
      
                                              var uitkomst = new discord.MessageEmbed()
