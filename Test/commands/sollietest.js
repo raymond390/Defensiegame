@@ -2,12 +2,12 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    const discord = require("discord.js");
 
-    module.exports.run = async (client, message, args) => {
     
         const categoryID = "790522631941128202";
-    
+        var staff = "790291727889858570";
+        var person = message.author;
+
         var userName = message.author.username;
         var userDiscriminator = message.author.discriminator;
     
@@ -151,7 +151,7 @@ module.exports.run = async (client, message, args) => {
         });
     }
     
-}
+
 
 module.exports.help = {
     name: "test",
