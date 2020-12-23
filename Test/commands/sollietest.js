@@ -58,6 +58,11 @@ module.exports.run = async (client, message, args) => {
                         .setTitle("Hoi" + message.author.username)
                         .setColor("#00BFFF")
                         .setDescription("Hier is u Sollictatie ");
+
+                    var vraag0 = new discord.MessageEmbed()
+                    .setTitle("sollicitatie vraag 1")
+                    .setColor("#00BFFF")
+                    .setDescription(" wat is je roblox naam"); 
                     
                     var vraag1 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 1")
@@ -106,40 +111,44 @@ module.exports.run = async (client, message, args) => {
                       
                         settedParent.send(message.author.id);
                         settedParent.send(embedParent);
-                        settedParent.send(vraag1);
+                        settedParent.send(vraag0);
      
     
                         settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                            var antwoord1 = antwoord.first();;
-                            settedParent.send(vraag2);
+                            var antwoord0 = antwoord.first();;
+                            settedParent.send(vraag1);
      
                             settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                             var antwoord2 = antwoord.first();;
-                             settedParent.send(vraag3);
+                             var antwoord1 = antwoord.first();;
+                             settedParent.send(vraag2);
      
                              settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                 var antwoord3 = antwoord.first();;
-                                 settedParent.send(vraag4);
+                                 var antwoord2 = antwoord.first();;
+                                 settedParent.send(vraag3);
      
                                  settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                     var antwoord4 = antwoord.first();;
-                                     settedParent.send(vraag5);
+                                     var antwoord3 = antwoord.first();;
+                                     settedParent.send(vraag4);
      
                                      settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                         var antwoord5 = antwoord.first();;
-                                         settedParent.send(vraag6);
+                                         var antwoord4 = antwoord.first();;
+                                         settedParent.send(vraag5);
      
                                          settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                             var antwoord6 = antwoord.first();;
-                                             settedParent.send(vraag7);
+                                             var antwoord5 = antwoord.first();;
+                                             settedParent.send(vraag6);
      
                                              settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                                var antwoord7 = antwoord.first();;
-                                                settedParent.send(vraag8);
+                                                var antwoord6 = antwoord.first();;
+                                                settedParent.send(vraag7);
                                                 
                                                 settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                                    var antwoord8 = antwoord.first();;
-                                                    settedParent.send(vraag9);
+                                                    var antwoord7 = antwoord.first();;
+                                                    settedParent.send(vraag8);
+
+                                                    settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
+                                                        var antwoord8 = antwoord.first();;
+                                                        settedParent.send(vraag9);
                                              
                                                     settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                                         var antwoord9 = antwoord.first();;
@@ -151,7 +160,7 @@ module.exports.run = async (client, message, args) => {
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**wat is je roblox naam**: \n${antwoord1}\n\n**hoe oud ben je?**: \n${antwoord2}\n\n**ben je bekend met admin?**: \n${antwoord3}\n\n**wat is AA**: \n${antwoord4}\n\n**wat doe je als je een HR ziet abusen?**:\n${antwoord5}\n\n**wat doe je als je een HC ziet abusen?**: \n${antwoord6}\n\n**wat doe je als er een hacker in de game zit?**: \n\n${antwoord7}\n\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)\n${antwoord8}\n**hoe actief ben jij op een schaal van 1 tot 10?**\n${antwoord9}\n**moeten wij nog iets van je weten?**\n`)
+                                             .setDescription(`**wat is je roblox naam**: \n${antwoord0}\n\n**hoe oud ben je?**: \n${antwoord1}\n\n**ben je bekend met admin?**: \n${antwoord2}\n\n**wat is AA**: \n${antwoord3}\n\n**wat doe je als je een HR ziet abusen?**:\n${antwoord4}\n**wat doe je als je een HC ziet abusen?**: \n${antwoord5}\n**wat doe je als er een hacker in de game zit?**: \n${antwoord6}\n\n**welke eenheid wil je? (luchtmacht/landmacht/korps-mariniers/KMAR)\n${antwoord7}\n**hoe actief ben jij op een schaal van 1 tot 10?**\n${antwoord8}\n**moeten wij nog iets van je weten?**\n${antwoord9}`)
                                          
      
                                              settedParent.bulkDelete(14).then(
@@ -167,7 +176,7 @@ module.exports.run = async (client, message, args) => {
 
             })
           })
-     
+        })
         
                     }
                     
