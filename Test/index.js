@@ -68,6 +68,7 @@ client.on("guildMemberAdd", member => {
 
     });
 
+   
 
     var channel = member.guild.channels.cache.get('778300362607951912');
 

@@ -2,5 +2,6 @@
     "host": "localhost",
     "user": "root",
     "password": "",
-    "database": "discordyt"
+    "database": "discordyt",
+    "mongoPath": "mongodb://localhost:27017"
 }
